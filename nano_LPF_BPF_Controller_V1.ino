@@ -6,14 +6,14 @@ uint8_t message;
 const uint8_t COMMAND_ON_OFF = 0x01;
 const uint8_t COMMAND_SPEED = 0x02;
 
-const int FILTER_160M = 8;
-const int FILTER_80m = 4;
+const int FILTER_160M = 1608;
+const int FILTER_80m = 1604;
 const int FILTER_40m = 802;
 const int FILTER_30m = 401;
 const int FILTER_20m = 101;
 const int FILTER_17m = 164;
 const int FILTER_15m = 264;
-const int FILTER_12m = 464;
+const int FILTER_12m = 364;
 const int FILTER_10m = 232;
 
 int currentCW = 0;
