@@ -8,3 +8,4 @@ The software is free to use. The software is part of an existing software found 
 In my case 9 BPF bands. In this case I have adjusted the software so that each band receives a switch-on pulse when you change bands. It should be noted that the 12M band is not yet operational. It is equivalent to the 10M band. 
 
 As soon as this software problem is resolved, I will ensure that the correct version becomes available.
+![Radioberry](https://github.com/user-attachments/assets/8289dc69-fd58-4663-ad1f-feed661922ef)
