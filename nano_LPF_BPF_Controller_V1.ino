@@ -328,7 +328,7 @@ void processCommand(int command) {
         break;
       case FILTER_12m:
       #if defined bpf_board_russian
-       digitalWrite(bpf_pin1, LOW);
+       digitalWrite(bpf_pin1, HIGH); // 10 and 12 M get same signal from Pihpsdr
        digitalWrite(bpf_pin2, HIGH);
        digitalWrite(bpf_pin3, LOW);
        digitalWrite(bpf_pin4, LOW);
