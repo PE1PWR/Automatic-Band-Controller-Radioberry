@@ -13,8 +13,8 @@ const int FILTER_30m = 401;
 const int FILTER_20m = 101;
 const int FILTER_17m = 164;
 const int FILTER_15m = 264;
-const int FILTER_12m = 364;
-const int FILTER_10m = 232;
+const int FILTER_12m = 4; // both bands 12 and 10 receive the same I2C signal from pihpsdr
+const int FILTER_10m = 4; // both bands 12 and 10 receive the same I2C signal from pihpsdr
 
 int currentCW = 0;
 boolean genericMode = false;
@@ -340,18 +340,18 @@ void processCommand(int command) {
       #endif
         break;
 
-       case FILTER_10m:
-       #if defined bpf_board_russian
-       digitalWrite(bpf_pin1, HIGH);
-       digitalWrite(bpf_pin2, LOW);
-       digitalWrite(bpf_pin3, LOW);
-       digitalWrite(bpf_pin4, LOW);
-       digitalWrite(bpf_pin5, LOW);
-       digitalWrite(bpf_pin6, LOW);
-       digitalWrite(bpf_pin7, LOW);
-       digitalWrite(bpf_pin8, LOW);
-       digitalWrite(bpf_pin9, LOW);
-       #endif
+      // case FILTER_10m:
+     //  #if defined bpf_board_russian
+     // digitalWrite(bpf_pin1, HIGH);
+     //  digitalWrite(bpf_pin2, LOW);
+    //   digitalWrite(bpf_pin3, LOW);
+    //   digitalWrite(bpf_pin4, LOW);
+    //   digitalWrite(bpf_pin5, LOW);
+     //  digitalWrite(bpf_pin6, LOW);
+     //  digitalWrite(bpf_pin7, LOW);
+     //  digitalWrite(bpf_pin8, LOW);
+      // digitalWrite(bpf_pin9, LOW);
+     //  #endif
      
         break;
 
