@@ -1,0 +1,22 @@
+
+
+write to 0x21 ack data: 0x02 0x10 0x08 = 1608
+write to 0x21 ack data: 0x02 0x10 0x04 = 1604
+write to 0x21 ack data: 0x02 0x08 0x02 = 802
+write to 0x21 ack data: 0x02 0x04 0x01 = 401
+write to 0x21 ack data: 0x02 0x01 0x01 = 101
+write to 0x21 ack data: 0x02 0x01 0x40 = 164
+write to 0x21 ack data: 0x02 0x02 0x40 = 264
+write to 0x21 ack data: 0x02 0x00 0x04 = 4
+
+Dit is de I2C Pihpsdr van DL1YCF 
+
+const int FILTER_160M = 1608;
+const int FILTER_80m = 1604;
+const int FILTER_40m = 802;
+const int FILTER_30m = 401;
+const int FILTER_20m = 101;
+const int FILTER_17m = 164;
+const int FILTER_15m = 264;
+const int FILTER_12m = 4;
+const int FILTER_10m = 4;
